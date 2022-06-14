@@ -61,6 +61,20 @@ async function createScreens() {
             data: rawScreen
         });
 
+        const seats = [];
+
+        for (let i = 0; i < 5; i++) {
+            const seat = await prisma.seat.create({
+                data: {
+                    screenId: screen.id
+                }
+            });
+
+            seats.push(seat);
+        }
+
+        screen.seats = seats;
+
         console.log('Screen created', screen);
 
         screens.push(screen);
