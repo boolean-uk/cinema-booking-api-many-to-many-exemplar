@@ -37,7 +37,7 @@ const createTicket = async (req, res) => {
 
     const ticket = await dbClient.ticket.findFirst({
         where: {
-            id: createTicket.id
+            id: createdTicket.id
         },
         include: {
             seats: {
