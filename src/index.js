@@ -4,6 +4,7 @@ require('dotenv').config();
 // Import express and cors
 const express = require('express');
 const cors = require('cors');
+const router = require('./router');
 
 // Set up express
 const app = express();
@@ -19,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 // Add your router below
 
 
-
+app.use('/', router);
 
 
 
