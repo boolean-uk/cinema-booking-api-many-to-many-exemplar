@@ -22,12 +22,13 @@
   "homepage": "https://github.com/boolean-uk/cinema-booking-api-many-to-many#readme",
   "devDependencies": {
     "nodemon": "^2.0.15",
-    "prisma": "^3.8.1"
+    "prisma": "^3.15.2"
   },
   "dependencies": {
-    "@prisma/client": "^3.8.1",
+    "@prisma/client": "^3.15.2",
     "cors": "^2.8.5",
     "dotenv": "^14.3.2",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "morgan": "^1.10.0"
   }
 }
